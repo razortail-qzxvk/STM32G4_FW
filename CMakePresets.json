@@ -1,0 +1,25 @@
+{
+  "version": 3,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 15,
+    "patch": 0
+  },
+  "configurePresets": [
+    {
+      "name": "llvmet",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build/llvmet",
+      "toolchainFile": "${sourceDir}/llvmet.cmake",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug"
+      }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "llvmet",
+      "configurePreset": "llvmet"
+    }
+  ]
+}
