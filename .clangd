@@ -1,0 +1,6 @@
+CompileFlags:
+  Compiler: C:/ATfE-22.1.0-Windows-x86_64/bin/clang++.exe
+  CompilationDatabase: build/
+Diagnostics:
+  ClangTidy:
+    Add: [bugprone-*, performance-*, readability-*]
