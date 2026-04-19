@@ -1,6 +1,10 @@
+# clangd.path C:/Program Files/LLVM/bin/clangd.exe
+# clangd.arguments --query-driver=C:/ATfE-22.1.0-Windows-x86_64/bin/clang*.exe
+# clangd.arguments --experimental-modules-support
+
 CompileFlags:
   Compiler: C:/ATfE-22.1.0-Windows-x86_64/bin/clang++.exe
-  CompilationDatabase: build/
+  CompilationDatabase: build/llvmet/
 Diagnostics:
   ClangTidy:
     Add: [bugprone-*, performance-*, readability-*]
