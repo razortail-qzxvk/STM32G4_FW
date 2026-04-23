@@ -4,10 +4,14 @@ set(CMAKE_SYSTEM_PROCESSOR arm)
 # 跳过链接测试
 set(CMAKE_TRY_COMPILE_TARGET_TYPE STATIC_LIBRARY)
 
-set(toolchain_path "C:/ATfE-22.1.0-Windows-x86_64")
-set(CMAKE_ASM_COMPILER "${toolchain_path}/bin/clang.exe")
-set(CMAKE_C_COMPILER   "${toolchain_path}/bin/clang.exe")
-set(CMAKE_CXX_COMPILER "${toolchain_path}/bin/clang++.exe")
+# set(toolchain_path "C:/ATfE-22.1.0-Windows-x86_64")
+# set(CMAKE_ASM_COMPILER "${toolchain_path}/bin/clang.exe")
+# set(CMAKE_C_COMPILER   "${toolchain_path}/bin/clang.exe")
+# set(CMAKE_CXX_COMPILER "${toolchain_path}/bin/clang++.exe")
+set(toolchain_path "/opt/ATfE-22.1.0-Linux-x86_64")
+set(CMAKE_ASM_COMPILER "${toolchain_path}/bin/clang")
+set(CMAKE_C_COMPILER   "${toolchain_path}/bin/clang")
+set(CMAKE_CXX_COMPILER "${toolchain_path}/bin/clang++")
 unset(toolchain_path)
 
 set(target_flags "")
